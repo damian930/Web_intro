@@ -58,7 +58,7 @@ body {
     background: white;
 }
 
-.apply_btn {
+.apply_button {
     background: #4a90e2;
     color: white;
     border: none;
@@ -73,6 +73,6 @@ body {
     white-space: nowrap;
 }
 
-.apply_btn:hover {
+.apply_button:hover {
     background: #357abd;
 }
