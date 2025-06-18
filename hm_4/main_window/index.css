@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;  
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(224, 224, 224, 0.774);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.75rem 3rem 0.75rem 3rem;
+}
+
+
+#to_do_p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+#input_row {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    height: 2.25rem;
+    align-items: center;
+}
+
+#input_row > input {
+    flex-grow: 1;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+#input_row > button {
+    flex-grow: 0;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+
+#sort_filter_row {
+    display: flex;
+    width: 100%;
+    gap: calc(4rem + 1vw);
+    height: 2.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sort_filter_row > #sort_by_button,
+#sort_filter_row > #filter_button {
+    display: flex;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 6px;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    font-size: 1.1rem;
+    background-color: white;
+    flex-grow: 1;
+    max-width: 200px;
+    text-align: start;
+    justify-content: space-between;
+
+    transition: background-color 0.5s ease;
+}
+
+.filter_setting > span {
+    margin-left: 0.5rem;
+    color: rgb(100, 100, 100);
+}
+
+.arrow {
+    transform: rotate(90deg);
+    color: rgb(100, 100, 100);
+}
+
+
+
+
+
+#list_of_tasks {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+#list_of_tasks > .to_do_task {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+
+}
+
+#list_of_tasks > .to_do_task > .info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#list_of_tasks > .to_do_task > .info > .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid rgb(148, 148, 148);
+    text-align: center;
+    color: rgb(110, 110, 110);
+}
+
+#list_of_tasks > .to_do_task > .info > .name_and_level > .name {
+    font-size: 1.2rem;
+    max-width: 12rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+#list_of_tasks > .to_do_task > .info > .name_and_level > .level {
+    background-color: #ef945b;
+    display: inline-block;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+
+}
+
+#list_of_tasks > .to_do_task > .date_and_edit {
+    color: #545658;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: baseline; 
+    gap: 0.75rem;
+}
+
+.date_and_edit > .date {
+    text-align: center;
+}
+
+.date_and_edit > .edit {
+    text-align: center;
+}
+
+
+#to_do_task_2 {
+    border-top: 1px solid rgb(173, 173, 173);
+}
+
+#to_do_task_2 > .info > .name_and_level > .level {
+    background-color: #cfcfcf !important;
+    color: black !important;
+}
+
+
+#to_do_task_3 {
+    border-top: 1px solid rgb(173, 173, 173);
+}
+
+#to_do_task_3 > .info > .name_and_level > .level {
+    background-color: #cfcfcf !important;
+    color: black !important;
+}
+
+
+#to_do_task_4 {
+    border-top: 1px solid rgb(173, 173, 173);
+}
+
+#to_do_task_4 > .info > .name_and_level > .level {
+    background-color: #ef5a4f !important;
+}
+
+
+#input_row > input:focus {
+    outline: none; 
+}
+
+
+#sort_filter_row > #sort_by_button:hover {
+    background-color: #f1f0f0;
+}
+
+
+#sort_filter_row > #filter_button:hover {
+    background-color: #f1f0f0;
+}
+
+
+@media (max-width: 519px) {
+    #list_of_tasks > .to_do_task > .info > .name_and_level > .name {
+        max-width: 8rem; /* Adjust this for mobile */
+    }
+}
+
+
+
+
+

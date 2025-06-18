@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add task</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="modal_header">
+            <h2 class="modal_title">Додати завдання</h2>
+            <button class="close_btn">✕</button>
+        </div>
+
+        <form>
+            <div class="form_group">
+                <label class="form_label">Назва завдання</label>
+                <input type="text" class="form_input" placeholder="Наприклад: Завдання 1">
+            </div>
+
+            <div class="form_group">
+                <label class="form_label">Дата виконання</label>
+                <input type="date" class="form_input" placeholder="Оберіть дату">
+            </div>
+
+            <div class="form_group">
+                <label class="form_label">Пріоритет</label>
+                <div class="radio_group">
+                    <div class="radio_option">
+                        <input type="radio" id="high" name="priority" value="high" class="radio_input">
+                        <label for="high" class="radio_label">Високий</label>
+                    </div>
+                    <div class="radio_option">
+                        <input type="radio" id="medium" name="priority" value="medium" class="radio_input" checked>
+                        <label for="medium" class="radio_label">Середній</label>
+                    </div>
+                    <div class="radio_option">
+                        <input type="radio" id="low" name="priority" value="low" class="radio_input">
+                        <label for="low" class="radio_label">Низький</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button_group">
+                <button type="submit" class="button_primary">Додати завдання</button>
+                <button type="reset" class="button_secondary">Скасувати</button>
+            </div>
+            
+        </form>
+
+    </main>
+</body>
+
+</html>

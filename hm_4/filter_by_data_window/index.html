@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM-4</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <form class="date_filter">
+
+        <h2 class="filter_title">Filter by date</h2>
+
+        <div class="date_inputs">
+            <div class="date_field">
+                <select id="date_picker1" class="date_input">
+                    <option value="current">Current</option>
+                    <option value="week_ago">Week ago</option>
+                    <option value="year_ago">Year ago</option>
+                </select>
+            </div>
+
+            <div class="date_field">
+                <input type="date" id="date_picker2" class="date_input" onchange="updateDate(this, '.date_display')">
+            </div>
+
+            <button type="submit" class="apply_btn">Apply</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

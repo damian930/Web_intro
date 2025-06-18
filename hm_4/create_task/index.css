@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(224, 224, 224, 0.774);
+    padding: 2.5rem 1.25rem;
+}
+
+main {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    max-width: 31.25rem;
+    margin: 0 auto;
+    box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+main > .modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.modal_header > .modal_title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal_header > .close_btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+main > form > .form_group {
+    margin-bottom: 1.5rem;
+}
+
+.form_group > .form_label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form_group > .form_input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 0.125rem solid #e5e5e5;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f8f8f8;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form_group > .form_input:focus {
+    border-color: #4a90e2;
+    background: white;
+}
+
+.form_group > .radio_group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio_group > .radio_option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio_option > .radio_input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #4a90e2;
+}
+
+.radio_option > .radio_label {
+    font-size: 1rem;
+    color: #333;
+}
+
+main > form > .button_group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button_group > .button_primary {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex: 1;
+}
+
+.button_group > .button_primary:hover {
+    background: #357abd;
+}
+
+.button_group > .button_secondary {
+    background: #f8f8f8;
+    color: #666;
+    border: 0.125rem solid #e5e5e5;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.button_group > .button_secondary:hover {
+    background: #e5e5e5;
+}
